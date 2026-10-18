@@ -1,13 +1,27 @@
+# basic packate
 sudo apt-get install vim emacs elpa-org -y
 sudo apt-get build-dep gcc  exuberant-ctags -y
 sudo apt-get install build-essential  cscope -y
+sudo apt install manpages-posix -y 
+sudo apt install manpages-posix-dev -y 
+usod apt install man-pages man-db -y 
+sudo apt-get install -y w3m wget zip
+sudo apt-get install -y gcc gcc-c++ gdb
 sudo apt-get install chromium-browser  git -y
+
+# configures
+git config --global http.sslVerify false
+git config --global http.postBuffer 1048576000
+git config --global http.postBuffer 524288000  # 设置为500MB
+git config --global http.lowSpeedLimit 0        # 禁用速度限制
+git config --global http.lowSpeedTime 999999    # 禁用超时
+
+
+
 sudo apt-get install -y amule bison cmake cpio cpp cpufrequtils curl
 sudo apt-get install -y ethtool
 sudo apt-get install -y evince
 sudo apt-get install -y expect
-sudo apt-get install -y gcc gcc-c++
-sudo apt-get install -y gdb
 sudo apt-get install -y gdisk
 sudo apt-get install -y gparted
 sudo apt-get install -y grep
@@ -23,7 +37,7 @@ sudo apt-get install -y iputils-arping
 sudo apt-get install -y iputils-ping
 sudo apt-get install -y iputils-tracepath
 sudo apt-get install -y ltrace
-sudo apt-get install -y man-db
+
 sudo apt-get install -y manpages
 sudo apt-get install -y oathtool
 sudo apt-get install -y patch
@@ -51,9 +65,6 @@ sudo apt-get install -y tzdata
 sudo apt-get install -y unrar
 sudo apt-get install -y unzip
 sudo apt-get install -y virtualbox
-sudo apt-get install -y w3m
-sudo apt-get install -y wget
-sudo apt-get install -y zip
 
 #perf & bcc
 sudo apt-get install linux-tools-common -y 
@@ -62,3 +73,5 @@ sudo apt-get install clang bpfcc-tools -y
 #bpf-tool
 linux-tools-`uname -r`
 linux-cloud-tools-`uname -r`
+
+
